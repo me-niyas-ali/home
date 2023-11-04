@@ -636,7 +636,7 @@ video {
     </div>
     <center>
      <p class="card-text crypto-text" style="padding-top:10px;">
-      <em>Checkout <span onclick="toggleSlidingCard1()" class="w3-text-green pointer">My Playlist</span></em>
+      <em>Checkout <span onclick="toggleSlidingCard('slidingCard1')" class="w3-text-green pointer">My Playlist</span></em>
      </p>
     </center>
    </div>
@@ -645,7 +645,7 @@ video {
     <!-- Content of the slide-up card playlist -->
     <center>
      <a href="#playlist">
-      <div class='card__button' id="toggleCard" style="margin:15px;width:25%;padding:3px;" onclick="toggleSlidingCard1()">
+      <div class='card__button' id="toggleCard" style="margin:15px;width:25%;padding:3px;" onclick="toggleSlidingCard('slidingCard1')">
        <b>Close</b>
       </div>
      </a>
@@ -678,7 +678,7 @@ video {
        <p style="line-height: 1.1em;">Traveling solo: <em>an adventure in self-discovery, where preparedness meets the unexpected.</em>
        </p>
        <p style="line-height: 1.1em;"><em>Solo trips offer a unique opportunity for self-discovery and personal growth, but proper preparation and safety precautions are essential to make the most of the adventure. </em></p>
-       <div class='card__button pointer' id="toggleCard2" onclick="toggleSlidingCard2()"><b>More...</b></div>
+       <div class='card__button pointer' onclick=""><b>More...</b></div>
       </div>
      </div>
    </div>
@@ -688,7 +688,7 @@ video {
     </div>
     <center>
      <p class="card-text crypto-text" style="padding-top:14px;">
-      <em>Checkout <span onclick="toggleSlidingCard2()" class="w3-text-green pointer">My Web Works</span></em>
+      <em>Checkout <span onclick="toggleSlidingCard('slidingCard2')" class="w3-text-green pointer">My Web Works</span></em>
      </p>
     </center>
    </div>
@@ -697,7 +697,7 @@ video {
     <!-- Content of the slide-up card playlist -->
     <center>
      <a href="#project">
-      <div class='card__button' id="toggleCard" style="margin:15px;width:25%;padding:3px;" onclick="toggleSlidingCard2()">
+      <div class='card__button' id="toggleCard" style="margin:15px;width:25%;padding:3px;" onclick="toggleSlidingCard('slidingCard2')">
        <b>Close</b>
       </div>
      </a>
@@ -754,18 +754,14 @@ $(document).ready(function(){
   });
 });
 </script>
+
 <script>
-   function toggleSlidingCard1() {
-    const slidingCard1 = document.getElementById("slidingCard1");
-    slidingCard1.classList.toggle("show-card");
-   }
-  </script>
-  <script>
-function toggleSlidingCard2() {
-    const slidingCard2 = document.getElementById("slidingCard2");
-    slidingCard2.classList.toggle("show-card");
+function toggleSlidingCard(cardId) {
+    const slidingCard = document.getElementById(cardId);
+    slidingCard.classList.toggle("show-card");
 }
 </script>
+
 <script>
   // Wait for the page to fully load
   window.addEventListener("load", function() {
