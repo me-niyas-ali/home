@@ -791,10 +791,10 @@ function toggleSlidingCard2() {
         function playVideo() {
             var video = document.getElementById('cover-video');
             video.play();
-            video.volume = 0.4;
 
             var button = document.querySelector('.btn-on-img');
             button.style.display = 'none';
+            video.volume = 0.2;
 
             setTimeout(function () {
                 button.style.display = 'block';
