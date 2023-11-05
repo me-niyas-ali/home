@@ -398,6 +398,10 @@
     animation: 8s slidy infinite;
    }
    
+   .slidy-slow {
+     animation: 10s slidy infinite!important;
+     }
+   
    @keyframes slidy {
     0% {
      left: 0%;
@@ -636,7 +640,7 @@ video {
     </div>
     <center>
      <p class="card-text crypto-text" style="padding-top:10px;">
-      <em>Checkout <span onclick="toggleSlidingCard('slidingCard1')" class="w3-text-green pointer">My Playlist</span></em>
+      <em>Checkout <span onclick="toggleSlidingCard('slidingCard1')" class="w3-text-green pointer"><u>My Playlist</u></span></em>
      </p>
     </center>
    </div>
@@ -688,7 +692,7 @@ video {
     </div>
     <center>
      <p class="card-text crypto-text" style="padding-top:14px;">
-      <em>Checkout <span onclick="toggleSlidingCard('slidingCard2')" class="w3-text-green pointer">My Web Works</span></em>
+      <em>Checkout <span onclick="toggleSlidingCard('slidingCard2')" class="w3-text-green pointer"><u>My Web Works</u></span></em>
      </p>
     </center>
    </div>
@@ -716,8 +720,23 @@ video {
     <hr>
     <!-- Add more content here -->
    </div>
-   <div class="item card8">
-    <div class="card_image">8 </div>
+   <div class="item card8" id="playlist">
+    <div class="card_image" style="height:80%">
+     <div id="slider">
+      <figure class="card_image slidy-slow">
+       <img src="https://niyasali96.github.io/getfile/friends-cover.jpg" preload alt>
+       <img src="https://play-lh.googleusercontent.com/gabYcj-CyF7SkH6F__CLq9ULIplIcHFCk-UAxdV5V3nkIUKp2VlZ3KLZ0pYYLpN7AOmJ" preload alt>
+       <img src="https://www.themoviedb.org/t/p/original/reEMJA1uzscCbkpeRJeTT2bjqUp.jpg" preload alt>
+       <img src="https://fr.web.img6.acsta.net/pictures/22/08/29/18/20/3648785.jpg" preload alt>
+       <img src="https://niyasali96.github.io/getfile/friends-cover.jpg" preload alt>
+      </figure>
+     </div>
+    </div>
+    <center>
+     <p class="card-text crypto-text" style="padding-top:12px;">
+      <em>My Favorites</em>
+     </p>
+    </center>
    </div>
    <div class="item card9">
     <div class="social-grid-container">
