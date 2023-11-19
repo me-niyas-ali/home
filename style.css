@@ -486,12 +486,13 @@
   background-color: none;
   max-width:550px;
   margin:auto;
+  flex-wrap: wrap;
 }
 
-.p-card1, .p-card2 {
+.p-card1, .p-card2, .p-card3{
   background-color: white;
   box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2);
-  width: 50%;
+  width: 80%;
   margin: 10px;
   text-align: center;
   font-size: 30px;
